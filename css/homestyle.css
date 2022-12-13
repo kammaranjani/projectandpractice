@@ -1,0 +1,354 @@
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --navbar-height: 59px;
+    --box1: url('../img/pa.jfif') no-repeat center center/cover;
+    --box2: url('../img/fr.jfif') no-repeat center center/cover;
+    --box3: url('../img/dairy\ items.jfif') no-repeat center center/cover;
+    --box4: url('../img/hygienelogo.jfif') no-repeat center center/cover;
+    --box5: url('../img/pooja.jfif') no-repeat center center/cover;
+    --box6: url('../img/snackslogo.jfif') no-repeat center center/cover;
+}
+
+#navbar {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: -10px;
+}
+
+#logo {
+    margin: 10px 25px;
+}
+
+#logo img {
+    height: 50px;
+    width: 45px;
+    border-radius: 15px;
+    margin: 12px 6px;
+}
+
+#navbar::before {
+    content: "";
+    background: grey;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+#navbar ul li a {
+    display: block;
+    margin: 2px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#home {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    margin: 2px 200px;
+    height: 521px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/logo.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 598px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+}
+
+#home h1 {
+    text-align: center;
+    color: white;
+}
+
+#home p {
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#services {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 50px; 
+    margin-right: 50px; 
+ 
+}
+
+#services .box {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    border-radius: 19px;
+    height:  237px;
+    width: 331px; 
+    margin: 8px 8px;
+    color: #000212;
+}
+#services .box h2{
+    padding-top: 78px;
+}
+
+#services .box::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    border-radius: 19px;
+    display: block;
+    margin: auto;
+}
+
+#services #box1::before {
+    background: var(--box1);
+    align-self: center;
+}
+
+#services #box2::before {
+    background: var(--box2);
+}
+
+#services #box3::before {
+    background: var(--box3);
+}
+
+#services #box4::before {
+    background: var(--box4);
+}
+
+#services #box5::before {
+    background: var(--box5);
+}
+
+#services #box6::before {
+    background: var(--box6);
+}
+#se{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    align-self: center;
+    
+}
+#se .box{
+        font-family: 'Montserrat', sans-serif;
+        border-radius: 19px;
+        height: 310px;
+        width: 300px;
+        margin: 8px 8px;
+        color: #000212;
+        background-color: #f3f1f5;
+        border:2px solid grey;
+    }
+#serve div img{
+    width:100px;
+    display: block;
+    margin: 20px auto;
+}
+#serve div #b2 img{
+    width:150px;
+    display: block;
+    margin:auto;
+}
+#se div button{
+    display: block;
+    margin: 7px auto;
+    text-align: center;
+}
+.h-primary {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.8rem;
+    margin: 26px;
+}
+
+.h-secondary {
+    font-size: 1.4rem;
+    margin: 12px;
+}
+
+.btn {
+    border-radius: 10px;
+    border: 2px solid rgb(204, 202, 202);
+    padding: 3px 25px;
+    background-color: rgb(194, 77, 77);
+    margin: 17px;
+    /* color:white; */
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.center {
+    /* height:50%; */
+    text-align: center;
+}
+#our-clients{
+    height: 250px;
+    background-color: #ede6ed;
+    margin-top: 30px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cli{
+    padding:19px;
+    
+}
+.cli img{
+    height: 71px;
+}
+#our-clients h2{
+    padding-top:36px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 15px;
+}
+#Contact{
+    position:relative;
+}
+#Contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background:url('../img/contact.png')center center/cover;
+}
+#conta{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#conta input, #conta textarea{
+    padding:0.5rem;
+    width:100%;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    border:2px solid grey;
+    color: grey;
+}
+#conta form{
+    width:33%;
+}
+#conta label{
+    font-size: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media screen and (max-width: 775px) {
+    /* navigation */
+    #navbar{
+    flex-direction: column;
+    }
+    #navbar ul li a{
+        font-size: 13px;
+        padding: 0px;
+        margin:0px 7px;
+        padding-bottom: 10px;
+    }
+    #home{
+        height:230px;
+        margin: 2px 50px;
+    }
+    #home::before{
+        height:382px;
+    }
+    /* home*/
+    #home p{
+     font-size: 1rem;
+    }
+    
+    /* categories */
+    
+    /* our clients */
+    #our-clients{
+    height:240px;
+    }
+    #our-clients h2 {
+        padding-top: 6px;
+    }
+    #clients{
+        flex-wrap:wrap;
+        padding:0px; 
+    }
+    .cli{
+        padding: 5px 24px;
+    }
+    .cli img{
+        width: 46px;
+        height: auto;
+    }
+    /* contact */
+    #conta form{
+        width:70%;
+    }
+    #conta input, #conta textarea{
+        padding:0.5rem;
+        width:100%;
+        border-radius: 5px;
+        font-size: 12px;
+        border:2px solid grey;
+        color: grey;
+    }
+    #conta label{
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .h-primary{
+     font-size: 22px;
+    }
+    .btn{
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+    }  

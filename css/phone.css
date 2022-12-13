@@ -1,0 +1,34 @@
+/* @media screen and (min-width: 480px) {
+body{
+    background-color: red;
+}
+/* navigation */
+#navbar{
+
+}
+
+/* home*/
+#home{
+
+}
+
+/* categories */
+#categories{
+
+}
+
+/* services */
+#serve{
+flex-direction: column;
+}
+
+/* our clients */
+#our-clients{
+overflow: hidden;
+}
+
+/* contact */
+#Contact{
+
+}
+} */
